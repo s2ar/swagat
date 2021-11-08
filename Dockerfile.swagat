@@ -1,0 +1,11 @@
+FROM golang:1.17
+
+COPY . /go/src/app
+
+WORKDIR /go/src/app/cmd/swagat
+
+RUN go build -o swagat main.go
+
+EXPOSE 9090
+
+CMD ["./swagat"]

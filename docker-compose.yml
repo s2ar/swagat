@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+
+  swagat:
+    build:
+      context: ./
+      dockerfile: Dockerfile.swagat
+    command: ./swagat -c config/config.yml server
+    container_name: swagat
+    ports:
+      - 9090:9090
+    volumes:
+      - ./config:/go/src/app/cmd/swagat/config
+      - ./web:/go/src/app/cmd/swagat/web
+

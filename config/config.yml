@@ -1,0 +1,11 @@
+BitmexService:
+  APIKey: ORqVaoVf1TJrVnKexpWjHfjk
+  APISecret: mvK7p-zYF5He2eistXxXUvASoJWRGvp6eOO5TF2gn4BHI2iB
+  Verb: GET
+  Scheme: wss
+  Host: testnet.bitmex.com
+  Endpoint: /realtime
+
+
+Server:
+  Listen: "0.0.0.0:9090"
